@@ -87,6 +87,7 @@ class User {
       if ($user && password_verify($password, $user['password'])) {
           $_SESSION['auth'] = 1;
           $_SESSION['username'] = $username;
+          $_SESSION['userid'] = $user['id'];
           $this->log_attempt($username, 'good');
           unset($_SESSION['failedAuth']);
           header('Location: /home');
