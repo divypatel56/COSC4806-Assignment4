@@ -39,7 +39,7 @@
                             <input required type="password" class="form-control" name="confirm_password">
                         </div>
                         <br>
-                        <button type="submit" class="btn btn-primary">SignUp</button>
+                        <button type="submit" class="btn btn-secondary">SignUp</button>
                     </fieldset>
                 </form> 
             </div>
