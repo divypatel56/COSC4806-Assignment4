@@ -11,5 +11,13 @@ class Reminders extends Controller {
    public function create(){
      $this->view('reminders/create');
    }
+
+  public function update(){
+     
+   }
+
+  public function delete(){
+    
+   }
   
 }
