@@ -34,8 +34,10 @@ class Reminders extends Controller {
       }
   }
 
-  public function delete(){
-    
-   }
+    public function delete($id) {
+        $reminder = $this->model('Reminder');
+        $reminder->delete_reminder($id);
+        header('Location: /reminders');
+    }
   
 }
