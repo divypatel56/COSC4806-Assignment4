@@ -2,11 +2,12 @@
 
 class Reminders extends Controller {
 
-   public function index(){
-     $reminder = $this->model('Reminder');
-     $list_reminders = $reminder->getAll_reminders();
-     $this->view('reminders/index', ["reminders" => $list_reminders]);
-   }
+  public function index() {
+      $reminder = $this->model('Reminder');
+      $list_reminders = $reminder->getAll_reminders($_SESSION['userid']);
+
+      $this->view('reminders/index', ["reminders" => $list_reminders]);
+  }
 
    public function create(){
      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
