@@ -2,8 +2,8 @@
 
 class Reminders extends Controller {
 
-    public function index() {		
-      
-    }
+   public function index(){
+     $this -> view('reminders/index');
+   }
   
 }
